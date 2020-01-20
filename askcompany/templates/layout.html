@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{%block title %}Ask Company{% endblock %}</title>
+    <style>
+        body{
+            background-color: #edecd6;
+        }
+    </style>
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <h1>Ask Company</h1>
+
+    {% block content %}
+    {% endblock %}
+
+    <hr/>
+    &copy; 2020. Ack Company.
+
+    {% block extra_head %}{% endblock %}
+</body>
+</html>
