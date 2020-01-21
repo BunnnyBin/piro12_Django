@@ -36,7 +36,7 @@ def item_new(request, item=None):
         form = ItemForm(request.POST, request.FILES, instance=item)
         if form.is_valid():
             item = form.save()
-            return redirect()
+            return redirect(item)
     else:
         form = ItemForm(instance=item)
     return render(request, 'shop/item_form.html', {
